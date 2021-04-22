@@ -3,5 +3,4 @@ kind: Beverage
 metadata:
   name: beverage-sample
 spec:
-  # Add fields here
-  foo: bar
+  brew: IIPA

@@ -28,9 +28,9 @@ type BeverageSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of Beverage. Edit Beverage_types.go to remove/update
+	// Brew is the beer type.
 	// +kubebuilder:validation:Enum=Lager;IPA;IIPA;XPA;PaleAle;Stout
-	Brew string `json:"foo,omitempty"`
+	Brew string `json:"brew,omitempty"`
 }
 
 // BeverageStatus defines the observed state of Beverage

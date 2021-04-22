@@ -34,9 +34,8 @@ spec:
         spec:
           description: BeverageSpec defines the desired state of Beverage
           properties:
-            foo:
-              description: Foo is an example field of Beverage. Edit Beverage_types.go
-                to remove/update
+            brew:
+              description: Brew is the beer type.
               enum:
               - Lager
               - IPA
