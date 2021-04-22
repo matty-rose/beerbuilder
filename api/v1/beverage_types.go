@@ -29,13 +29,15 @@ type BeverageSpec struct {
 	// Important: Run "make" to regenerate code after modifying this file
 
 	// Foo is an example field of Beverage. Edit Beverage_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	// +kubebuilder:validation:Enum=Lager;IPA;IIPA;XPA;PaleAle;Stout
+	Brew string `json:"foo,omitempty"`
 }
 
 // BeverageStatus defines the observed state of Beverage
 type BeverageStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
+	Tasty bool `json:"tasty"`
 }
 
 // +kubebuilder:object:root=true
