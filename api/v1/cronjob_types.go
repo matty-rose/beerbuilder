@@ -75,7 +75,7 @@ type CronJobSpec struct {
 
 	// +kubebuilder:validation:Minimum=0
 
-	// The number of succesful finished jobs to retain.
+	// The number of successful finished jobs to retain.
 	// This is a pointer to distinguish between explicit zero and not specified
 	// +optional
 	SuccessfulJobsHistoryLimit *int32 `json:"successfulJobsHistoryLimit,omitempty"`
