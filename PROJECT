@@ -1,3 +1,7 @@
 domain: tutorial.kubebuilder.io
 repo: beer
+resources:
+- group: batch
+  kind: CronJob
+  version: v1
 version: "2"
